@@ -19,7 +19,7 @@ TRaSH a créé un [schéma](/Radarr/Radarr-setup-custom-formats/#which-quality-p
 Il est impératif que vous respectiez et compreniez ce qui est proposé par le guide de TRaSH (_en anglais uniquement_) :
 
 - L'ajout de Formats Personnalisés, comme expliqué dans [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="\_blank" rel="noopener noreferrer"}.
-- La configuration d'un profil de qualité pour utiliser les formats personnalisés, comme expliqué dans la section [How to setup Quality Profiles | Basics section](/Radarr/Radarr-setup-custom-formats/#basics){:target="\_blank" rel="noopener noreferrer"}.
+- La configuration d'un profil de qualité pour utiliser les formats personnalisés, comme expliqué dans la section [How to set up Quality Profiles | Basics section](/Radarr/Radarr-setup-custom-formats/#basics){:target="\_blank" rel="noopener noreferrer"}.
 
 ---
 
@@ -45,7 +45,7 @@ Deux options s'offre à vous :
 
 !!! tip "Il s'agit de la méthode à privilégier."
 
-- Configurez Radarr en utilisant : [How to setup Quality Profiles | Which Quality Profile should you choose](/Radarr/radarr-setup-quality-profiles/#which-quality-profile-should-you-choose) (_en anglais_).
+- Configurez Radarr en utilisant : [How to set up Quality Profiles | Which Quality Profile should you choose](/Radarr/radarr-setup-quality-profiles/#which-quality-profile-should-you-choose) (_en anglais_).
 - Configurez [Bazarr](../Bazarr/Setup-Guide.md) (_en anglais_). Il permet d'obtenir des sous-titres pour tous les films.
 - Profitez de vos films avec les sous-titres.
 - (Facultatif) Ajoutez le Format Personnalisé [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) avec un score de `{{ radarr['cf']['french-vostfr']['trash_scores']['french-vostfr'] }}`.
@@ -121,7 +121,7 @@ Si vous préférez les encodages HD de haute qualité (Bluray-720/1080p)
 
 {! include-markdown "../../includes/french-guide/radarr-cf-french-hd-bluray-web-scoring-fr.md" !}
 
-{! include-markdown "../../includes/cf/radarr-misc.md" !}
+{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
 {! include-markdown "../../includes/french-guide/radarr-french-unwanted-fr.md" !}
 
@@ -167,7 +167,7 @@ Si vous préférez les encodages UHD de haute qualité (Bluray-2160p)
 
 {! include-markdown "../../includes/french-guide/radarr-cf-french-uhd-bluray-web-scoring-fr.md" !}
 
-{! include-markdown "../../includes/cf/radarr-misc.md" !}
+{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
 {! include-markdown "../../includes/french-guide/radarr-french-unwanted-uhd-fr.md" !}
 
@@ -207,7 +207,7 @@ Si vous préférez les Remuxes en 1080p (Remux-1080p)
 
 {! include-markdown "../../includes/french-guide/radarr-cf-french-remux-web-scoring-fr.md" !}
 
-{! include-markdown "../../includes/cf/radarr-misc.md" !}
+{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
 {! include-markdown "../../includes/french-guide/radarr-french-unwanted-fr.md" !}
 
@@ -251,7 +251,7 @@ Si vous préférez les Remuxes en 2160p (Remux-2160p)
 
 {! include-markdown "../../includes/french-guide/radarr-cf-french-remux-web-scoring-fr.md" !}
 
-{! include-markdown "../../includes/cf/radarr-misc.md" !}
+{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
 {! include-markdown "../../includes/french-guide/radarr-french-unwanted-uhd-fr.md" !}
 

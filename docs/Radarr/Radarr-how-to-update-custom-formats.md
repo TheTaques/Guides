@@ -1,8 +1,8 @@
 # How to update Custom Formats
 
-Here I will try to explain how you can manually update Custom Formats for Radarr v3+, With any changes from the guide or changes provided to you from other sources, without losing the scoring in your Quality Profile.
+Here we will try to explain how you can manually update Custom Formats for Radarr v3+, With any changes from the guide or changes provided to you from other sources, without losing the scoring in your Quality Profile.
 
-!!! info "Keep in mind Custom Formats are made to fine tune your Quality Profile.<br>Generally, quality trumps all"
+!!! info "Keep in mind Custom Formats are made to fine-tune your Quality Profile.<br>Generally, quality trumps all"
 
 ## How to Copy/Paste the JSON
 
@@ -32,10 +32,8 @@ After selecting the `Import` button you will get a screen that has all the Custo
 
 !!! warning "The Import to update existing Custom Formats replaces the existing Custom Format, so all manual changes you did to it will be lost :warning:"
 
-### TRaSH Sync
+### Guide sync tool
 
-This can be done also automatically with one of the TRaSH Sync Applications,
-
-more info can be found [Here](/Guide-Sync/){:target="\_blank" rel="noopener noreferrer"}
+!!! info "You can also use a [Guide sync tool](/Guide-Sync/){:target="\_blank" rel="noopener noreferrer"} to sync the Custom Formats or even the complete quality profile(s)."
 
 --8<-- "includes/support.md"

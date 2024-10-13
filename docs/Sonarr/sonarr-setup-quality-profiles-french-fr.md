@@ -19,7 +19,7 @@ TRaSH a créé un [schéma](/Sonarr/sonarr-setup-custom-formats/#which-quality-p
 Il est impératif que vous respectiez et compreniez ce qui est proposé par le guide de TRaSH (_en anglais uniquement_) :
 
 - L'ajout de Formats Personnalisés, comme expliqué dans [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats/){:target="\_blank" rel="noopener noreferrer"}.
-- La configuration d'un profil de qualité pour utiliser les formats personnalisés, comme expliqué dans la section [How to setup Quality Profiles | Basics section](/Sonarr/sonarr-setup-quality-profiles/#basics){:target="\_blank" rel="noopener noreferrer"}.
+- La configuration d'un profil de qualité pour utiliser les formats personnalisés, comme expliqué dans la section [How to set up Quality Profiles | Basics section](/Sonarr/sonarr-setup-quality-profiles/#basics){:target="\_blank" rel="noopener noreferrer"}.
 
 ---
 
@@ -31,7 +31,7 @@ Deux options s'offre à vous :
 
 !!! tip "Il s'agit de la méthode à privilégier."
 
-- Configurez Radarr en utilisant : [How to setup Quality Profiles | Which Quality Profile should you choose](/Sonarr/sonarr-setup-quality-profiles/#which-quality-profile-should-you-choose){:target="\_blank" rel="noopener noreferrer"}. (_en anglais_).
+- Configurez Radarr en utilisant : [How to set up Quality Profiles | Which Quality Profile should you choose](/Sonarr/sonarr-setup-quality-profiles/#which-quality-profile-should-you-choose){:target="\_blank" rel="noopener noreferrer"}. (_en anglais_).
 - Configurez [Bazarr](../Bazarr/Setup-Guide.md) (_en anglais_). Il permet d'obtenir des sous-titres pour tous les films.
 - Profitez de vos films avec les sous-titres.
 - (Facultatif) Ajoutez le Format Personnalisé [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr){:target="\_blank" rel="noopener noreferrer"} avec un score de `{{ sonarr['cf']['french-vostfr']['trash_scores']['french-vostfr'] }}`.
@@ -100,7 +100,7 @@ Si vous préférez les 720p/1080p WEBDL (WEB-1080p)
 
 {! include-markdown "../../includes/french-guide/sonarr-french-unwanted-fr.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-misc.md" !}
+{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
 
@@ -139,9 +139,9 @@ Le seul problème avec le 2160p réside dans le fait de l'obtenir avec le DV/HDR
 
 {! include-markdown "../../includes/french-guide/sonarr-french-unwanted-uhd-fr.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-optional-uhd.md" !}
+{! include-markdown "../../includes/cf/sonarr-misc-uhd-optional.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-misc.md" !}
+{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-uhd-streaming-services.md" !}
 

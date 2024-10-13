@@ -1,4 +1,4 @@
-??? abstract "Misc - [Click to show/hide]"
+??? abstract "Miscellaneous (Required) - [Click to show/hide]"
 
     | Custom Format                                                                                            |                             Score                              | Trash ID                                        |
     | -------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------: | ----------------------------------------------- |
@@ -8,7 +8,7 @@
 
     ??? tip "Proper and Repacks - [Click to show/hide]"
 
-        I also suggest to change the Propers and Repacks settings in Radarr
+        We also suggest changing the Propers and Repacks settings in Radarr.
 
         `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Radarr/Radarr-collection-of-custom-formats/#repackproper) Custom Format.
 

@@ -1,4 +1,4 @@
-??? abstract "Misc - [Click to show/hide]"
+??? abstract "Miscellaneous (Required) - [Click to show/hide]"
 
     | Custom Format                                                                                            |                             Score                              | Trash ID                                        |
     | -------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------: | ----------------------------------------------- |
@@ -8,7 +8,7 @@
 
     ??? tip "Proper and Repacks - [Click to show/hide]"
 
-        I also suggest to change the Propers and Repacks settings in Sonarr
+        We also suggest changing the Propers and Repacks settings in Sonarr.
 
         `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Sonarr/sonarr-collection-of-custom-formats/#repackproper) Custom Format.
 

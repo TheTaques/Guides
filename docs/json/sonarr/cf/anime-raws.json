@@ -7,6 +7,15 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
+      "name": "AsukaRaws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Asuka[ ._-]?(Raws)"
+      }
+    },
+    {
       "name": "Beatrice-Raws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -88,6 +97,15 @@
       }
     },
     {
+      "name": "Moozzi2",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Moozzi2)\\b"
+      }
+    },
+    {
       "name": "NanakoRaws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -151,6 +169,15 @@
       }
     },
     {
+      "name": "ReinForce",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(ReinForce)\\b"
+      }
+    },
+    {
       "name": "Scryous-Raws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -166,6 +193,15 @@
       "required": false,
       "fields": {
         "value": "Seicher[ ._-]?(Raws)"
+      }
+    },
+    {
+      "name": "Shiniori-Raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Shiniori[ ._-]?(Raws)"
       }
     }
   ]
