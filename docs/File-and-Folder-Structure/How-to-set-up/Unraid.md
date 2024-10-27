@@ -20,7 +20,7 @@ Make sure `Tunable (support Hard Links)` is enabled in your `Settings` => `Globa
 
 !!! warning "To get Hardlinks and Atomic-Moves working with unRAID,<br>You will need to make use of <u>**ONE**</u> share with subfolders."
 
-In this example, I'm using my own setup and the preferred share `data`.
+In this example, I'm using my setup and the preferred share `data`.
 
 Go to your dashboard and select `Shares` on the navigation bar, then choose `Add Share`.
 
@@ -65,11 +65,11 @@ Go to your dashboard and select `Shares` on the navigation bar, then choose `Add
 
 On the host (unRAID) you will need to add `/mnt/user` before it. **So `/mnt/user/data`**
 
-{! include-markdown "../../../includes/hardlinks/docker-tree-full.md" !}
+{! include-markdown "../../../includes/file-and-folder-structure/docker-tree-full.md" !}
 
 _I'm using lower-case on all folders on purpose, being Linux is case-sensitive._
 
-The `data` folder has sub-folders for `torrents` and `usenet`, and each of these has sub-folders for `tv`, `movie` and `music` downloads to keep things organized. The `media` folder has nicely named `TV`, `Movies` and `Music` sub-folders, this is where your library resides, and what you’d pass to Plex, Emby or JellyFin.
+The `data` folder has sub-folders for `torrents` and `usenet`, and each of these has sub-folders for `tv`, `movie`, and `music` downloads to keep things organized. The `media` folder has nicely named `TV`, `Movies`, and `Music` sub-folders, this is where your library resides, and what you’d pass to Plex, Emby, or JellyFin.
 
 You will need to create these subfolders yourself. You can do this in any way you prefer, but the fastest way to create all the necessary subfolders would be to use the terminal (explained below). Alternatively, Krusader or WinSCP are popular choices if you are unsure.
 
@@ -79,7 +79,7 @@ The fastest way to create all the necessary subfolders would be to use the termi
 These options will automatically create the required subfolders for your media library as well as your preferred download client(s).
 If you use both torrents and Usenet, use both commands.
 
-#### If you use usenet
+#### If you use Usenet
 
 ```bash
 mkdir -p /mnt/user/data/{usenet/{incomplete,complete}/{tv,movies,music},media/{tv,movies,music}}
@@ -95,21 +95,49 @@ mkdir -p /mnt/user/data/{torrents/{tv,movies,music},media/{tv,movies,music}}
 
 ### Breakdown of the Folder Structure
 
-{! include-markdown "../../../includes/hardlinks/bad-path-suggestion.md" !}
+{! include-markdown "../../../includes/file-and-folder-structure/bad-path-suggestion.md" !}
 
 ## Setting up the containers
+
+!!! tip "Create a custom docker network"
+    Why would you want a custom docker network?
+
+    A major benefit of having your Docker containers on the same custom Docker network is that they will be able to communicate with other using their container names, rather than having to use IP addresses.
+
+    Unraid doesn't create a custom docker network by default, you need to create one yourself.
+
+    - Open a terminal window and type:
+
+        ```none
+        docker network create your_uber_cool_network_name
+        ```
+
+    - or watch the following video below on how to create a custom docker network
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7fzBDCI8O2w?si=itGS624rC7jxD8ly" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
 
 After you've created all the necessary folders, it's time to set up the Docker container's paths.
 
 Go to your dashboard and select the Docker container you want to edit, or, if you're starting fresh, add the container/App you want to use.
 
-unRAID makes it pretty clear which is the Host Path and Container Path.
+1. Make sure you enable the `Advanced View` at the top right corner.
 
-`Container Path:` => The path that will be used from inside the container.
+    ![!Enable Advanced View](images/unraid-docker-enable-advanced-view.png)
 
-`Host Path:` => The actual/absolute path used on your unRAID Server (The Host).
+1. When adding/editing the paths make sure you click on the `EDIT` button to add/edit the paths correctly.
 
-!!! tip "Make sure you enabled the advanced view at the top right corner and click on the `EDIT` button to edit the paths correctly."
+    ![!Click on Edit](images/unraid-docker-click-edit.png)
+
+1. Don't forget to remove all individual location mounts, for example `/movies`, `/tv`, `/books`, or `/downloads`, so you can avoid making mistakes by using them. You only need the `/config` mount, and then whichever paths/mounts/volumes are described in this guide.
+
+!!! info
+    unRAID makes it pretty clear which is the Host Path and Container Path.
+
+    `Container Path:` => The path that will be used from inside the container.
+
+    `Host Path:` => The actual/absolute path used on your unRAID Server (The Host).
 
 ---
 
@@ -127,7 +155,7 @@ qBittorrent, Deluge, ruTorrent
 
     The reason why we use `/data/torrents/` for the torrent client is because it only needs access to the torrent data. In the torrent software settings, you’ll need to configure your categories/labels to utilize the right path for specific content. You can sort into sub-folders like `/data/torrents/{tv|movies|music}`.
 
-{! include-markdown "../../../includes/hardlinks/docker-tree-torrents.md" !}
+{! include-markdown "../../../includes/file-and-folder-structure/docker-tree-torrents.md" !}
 
 ---
 
@@ -145,7 +173,7 @@ NZBGet or SABnzbd
 
     The reason why we use `/data/usenet/` for the Usenet client is that it only needs access to the Usenet data. In the Usenet software settings, you’ll need to configure your paths to sort content into sub-folders like `/data/usenet/{tv|movies|music}`.
 
-{! include-markdown "../../../includes/hardlinks/docker-tree-usenet.md" !}
+{! include-markdown "../../../includes/file-and-folder-structure/docker-tree-usenet.md" !}
 
 ---
 
@@ -161,9 +189,9 @@ Sonarr, Radarr and Lidarr
 
 !!! info
 
-    Sonarr, Radarr and Lidarr get access to everything because the download folder(s) and media folder will need to look like and be one mount, on the file system. Hard links will work properly and any moves will be atomic, rather than copying and deleting.
+    Sonarr, Radarr, and Lidarr get access to everything because the download folder(s) and media folder will need to look like and be one mount, on the file system. Hard links will work properly and any moves will be atomic, rather than copying and deleting.
 
-{! include-markdown "../../../includes/hardlinks/docker-tree-full.md" !}
+{! include-markdown "../../../includes/file-and-folder-structure/docker-tree-full.md" !}
 
 ---
 
@@ -179,9 +207,9 @@ Plex, Emby, JellyFin and Bazarr
 
 !!! info
 
-    Plex, Emby, JellyFin and Bazarr only need access to your media library, which can have any number of sub-folders (Movies, Kids Movies, TV, Documentary TV and/or Music).
+    Plex, Emby, JellyFin, and Bazarr only need access to your media library, which can have any number of sub-folders (Movies, Kids Movies, TV, Documentary TV, and/or Music).
 
-{! include-markdown "../../../includes/hardlinks/docker-tree-media.md" !}
+{! include-markdown "../../../includes/file-and-folder-structure/docker-tree-media.md" !}
 
 ---
 
@@ -189,13 +217,15 @@ Plex, Emby, JellyFin and Bazarr
 
 ![!unraid-final-result](images/unraid-final-result.png)
 
-### Examples how to set up your paths INSIDE your applications
+### Examples - How to set up your paths INSIDE your applications
 
-**Don't forget to look at the [Examples](/Hardlinks/Examples/) of how to set up your paths INSIDE your applications.**
+**Don't forget to look at the [Examples](/File-and-Folder-Structure/Examples/) of how to set up your paths INSIDE your applications.**
 
 ## Video Tutorial
 
 !!! tip ""
+
+    !!! warning "Videos are generally outdated very fast, so make sure you always follow and double-check with the written guide."
 
     Big Thanks to IBRACORP for noticing this Guide and creating a Video covering this unRAID section.
 
