@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 #### Custom Formats and scores
 
 **The following Custom Formats are required:**
@@ -61,6 +62,7 @@
     | Custom Format                                                                                                                        |                                            Score                                            | Trash ID                                             |
     | ------------------------------------------------------------------------------------------------------------------------------------ | :-----------------------------------------------------------------------------------------: | ---------------------------------------------------- |
     | [{{ radarr['cf']['bhdstudio']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/bhdstudio.json) |                 {{ radarr['cf']['bhdstudio']['trash_scores']['default'] }}                  | {{ radarr['cf']['bhdstudio']['trash_id'] }}          |
+    | [{{ radarr['cf']['hallowed']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/hallowed.json)   |                  {{ radarr['cf']['hallowed']['trash_scores']['default'] }}                  | {{ radarr['cf']['hallowed']['trash_id'] }}           |
     | [{{ radarr['cf']['web-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-01)                                |                {{ radarr['cf']['web-tier-01']['trash_scores']['default'] }}                 | {{ radarr['cf']['web-tier-01']['trash_id'] }}        |
     | [{{ radarr['cf']['web-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-02)                                |                {{ radarr['cf']['web-tier-02']['trash_scores']['default'] }}                 | {{ radarr['cf']['web-tier-02']['trash_id'] }}        |
     | [{{ radarr['cf']['web-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-03)                                |                {{ radarr['cf']['web-tier-03']['trash_scores']['default'] }}                 | {{ radarr['cf']['web-tier-03']['trash_id'] }}        |
@@ -95,16 +97,17 @@
 
     !!! danger "Adding any of the `HDR10+ Boosts` could result in less streaming optimized releases :warning:"
 
-    | Custom Format                                                                                                       |                                Score                                | Trash ID                                             |
-    | ------------------------------------------------------------------------------------------------------------------- | :-----------------------------------------------------------------: | ---------------------------------------------------- |
-    | [{{ radarr['cf']['bad-dual-groups']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups)       |  {{ radarr['cf']['bad-dual-groups']['trash_scores']['default'] }}   | {{ radarr['cf']['bad-dual-groups']['trash_id'] }}    |
-    | [{{ radarr['cf']['evo-no-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl)             |    {{ radarr['cf']['evo-no-webdl']['trash_scores']['default'] }}    | {{ radarr['cf']['evo-no-webdl']['trash_id'] }}       |
-    | [{{ radarr['cf']['no-rlsgroup']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup)               |    {{ radarr['cf']['no-rlsgroup']['trash_scores']['default'] }}     | {{ radarr['cf']['no-rlsgroup']['trash_id'] }}        |
-    | [{{ radarr['cf']['obfuscated']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#obfuscated)                 |     {{ radarr['cf']['obfuscated']['trash_scores']['default'] }}     | {{ radarr['cf']['obfuscated']['trash_id'] }}         |
-    | [{{ radarr['cf']['retags']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#retags)                         |       {{ radarr['cf']['retags']['trash_scores']['default'] }}       | {{ radarr['cf']['retags']['trash_id'] }}             |
-    | [{{ radarr['cf']['scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#scene)                           |       {{ radarr['cf']['scene']['trash_scores']['default'] }}        | {{ radarr['cf']['scene']['trash_id'] }}              |
-    | [{{ radarr['cf']['hdr10plus-boost']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hdr10plus-boost)       |  {{ radarr['cf']['hdr10plus-boost']['trash_scores']['default'] }}   | {{ radarr['cf']['hdr10plus-boost']['trash_id'] }}    |
-    | [{{ radarr['cf']['dv-hdr10plus-boost']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-hdr10plus-boost) | {{ radarr['cf']['dv-hdr10plus-boost']['trash_scores']['default'] }} | {{ radarr['cf']['dv-hdr10plus-boost']['trash_id'] }} |
+    | Custom Format                                                                                                                   |                                   Score                                   | Trash ID                                                   |
+    | ------------------------------------------------------------------------------------------------------------------------------- | :-----------------------------------------------------------------------: | ---------------------------------------------------------- |
+    | [{{ radarr['cf']['bad-dual-groups']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups)                   |     {{ radarr['cf']['bad-dual-groups']['trash_scores']['default'] }}      | {{ radarr['cf']['bad-dual-groups']['trash_id'] }}          |
+    | [{{ radarr['cf']['black-and-white-editions']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#black-and-white-editions) | {{ radarr['cf']['black-and-white-editions']['trash_scores']['default'] }} | {{ radarr['cf']['black-and-white-editions']['trash_id'] }} |
+    | [{{ radarr['cf']['evo-no-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl)                         |       {{ radarr['cf']['evo-no-webdl']['trash_scores']['default'] }}       | {{ radarr['cf']['evo-no-webdl']['trash_id'] }}             |
+    | [{{ radarr['cf']['no-rlsgroup']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup)                           |       {{ radarr['cf']['no-rlsgroup']['trash_scores']['default'] }}        | {{ radarr['cf']['no-rlsgroup']['trash_id'] }}              |
+    | [{{ radarr['cf']['obfuscated']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#obfuscated)                             |        {{ radarr['cf']['obfuscated']['trash_scores']['default'] }}        | {{ radarr['cf']['obfuscated']['trash_id'] }}               |
+    | [{{ radarr['cf']['retags']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#retags)                                     |          {{ radarr['cf']['retags']['trash_scores']['default'] }}          | {{ radarr['cf']['retags']['trash_id'] }}                   |
+    | [{{ radarr['cf']['scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#scene)                                       |          {{ radarr['cf']['scene']['trash_scores']['default'] }}           | {{ radarr['cf']['scene']['trash_id'] }}                    |
+    | [{{ radarr['cf']['hdr10plus-boost']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hdr10plus-boost)                   |     {{ radarr['cf']['hdr10plus-boost']['trash_scores']['default'] }}      | {{ radarr['cf']['hdr10plus-boost']['trash_id'] }}          |
+    | [{{ radarr['cf']['dv-hdr10plus-boost']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-hdr10plus-boost)             |    {{ radarr['cf']['dv-hdr10plus-boost']['trash_scores']['default'] }}    | {{ radarr['cf']['dv-hdr10plus-boost']['trash_id'] }}       |
 
     ---
 
@@ -112,6 +115,7 @@
 
     - **{{ radarr['cf']['bad-dual-groups']['name'] }}:** [*Optional*] These groups take the original release and add their own language track (e.g. AAC 2.0 Portuguese) as the first track. Afterward, FFprobe would determine that the media file is Portuguese. It's a common rule that you only add the best audio as the main track.
     Also they often even rename the release name into Portuguese.
+    - **{{ radarr['cf']['black-and-white-editions']['name'] }}:** [*Optional*] Some movies get an additional release version in monochrome/black and white. This custom format matches some of the more common occurrences of these.
     - **{{ radarr['cf']['evo-no-webdl']['name'] }}:** This group is often banned for low-quality Blu-ray releases, but their WEB-DLs are okay.
     - **{{ radarr['cf']['no-rlsgroup']['name'] }}:** [*Optional*] Some indexers strip out the release group which could result in LQ groups being scored incorrectly. For example, a lot of EVO releases end up with a stripped group name. These releases would appear as "upgrades" and could end up getting a decent score after other CFs are scored.
     - **{{ radarr['cf']['obfuscated']['name'] }}:** [*Optional*] Use these only if you wish to avoid renamed releases.
@@ -122,7 +126,7 @@
 
 {! include-markdown "../../includes/cf/radarr-misc-uhd-optional.md" !}
 
-??? abstract "Movie Versions - [Click to show/hide]"
+??? abstract "Movie Versions (Optional) - [Click to show/hide]"
 
     | Custom Format                                                                                                           |                                 Score                                 | Trash ID                                               |
     | ----------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------: | ------------------------------------------------------ |
@@ -139,3 +143,4 @@
         - The reason why we don't add [{{ radarr['cf']['imax']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#imax) is because BHDStudio didn't add IMAX to their filename before 2023-07-27.
 
         !!! danger "Adding `IMAX`/`IMAX Enhanced` will replace the BHDStudio release in most cases :warning:"
+<!-- markdownlint-enable MD041-->

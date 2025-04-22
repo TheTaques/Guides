@@ -40,10 +40,6 @@ Pre-allocate disk space for the added torrents. This limits fragmentation and al
 
     **Suggested: `Enabled`**
 
-!!! warning
-
-    Do not set Pre-allocated disk space if you are using ZFS as your filesystem as ZFS [does not support fallocate](https://github.com/openzfs/zfs/issues/326){:target="\_blank" rel="noopener noreferrer"}
-
 {! include-markdown "../../../includes/downloaders/warning-path-location.md" !}
 
 ---
@@ -192,7 +188,7 @@ Finally, you will want to enable some plugins. There are plenty of plugins on th
 
 !!! info
 
-    If you are running a docker container, such as binhex's image, the `WebUI` plugin may not need to be enabled. Instead, it may be configured in the container.
+    If you are running a Docker container, such as binhex's image, the `WebUI` plugin may not need to be enabled. Instead, it may be configured in the container.
 
 ### WebUI
 

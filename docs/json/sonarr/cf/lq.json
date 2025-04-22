@@ -1,7 +1,8 @@
 {
   "trash_id": "9c11cd3f07101cdba90a2d81cf0e56b4",
   "trash_scores": {
-    "default": -10000
+    "default": -10000,
+    "german": -35000
   },
   "name": "LQ",
   "includeCustomFormatWhenRenaming": false,
@@ -13,6 +14,15 @@
       "required": false,
       "fields": {
         "value": "^(BRiNK)$"
+      }
+    },
+    {
+      "name": "BTM",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BTM)$"
       }
     },
     {
@@ -61,12 +71,30 @@
       }
     },
     {
+      "name": "Feranki1980",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Feranki1980)$"
+      }
+    },
+    {
       "name": "FGT",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "^(FGT)$"
+      }
+    },
+    {
+      "name": "FMD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FMD)$"
       }
     },
     {

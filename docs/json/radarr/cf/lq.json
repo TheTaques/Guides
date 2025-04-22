@@ -1,7 +1,8 @@
 {
   "trash_id": "90a6f9a284dff5103f6346090e6280c8",
   "trash_scores": {
-    "default": -10000
+    "default": -10000,
+    "german": -35000
   },
   "name": "LQ",
   "includeCustomFormatWhenRenaming": false,
@@ -70,6 +71,15 @@
       }
     },
     {
+      "name": "BAUCKLEY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BAUCKLEY)$"
+      }
+    },
+    {
       "name": "BdC",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -85,6 +95,24 @@
       "required": false,
       "fields": {
         "value": "^(beAst)$"
+      }
+    },
+    {
+      "name": "BTM",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BTM)$"
+      }
+    },
+    {
+      "name": "C1NEM4",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(C1NEM4)$"
       }
     },
     {
@@ -133,6 +161,15 @@
       }
     },
     {
+      "name": "COLLECTiVE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(COLLECTiVE)$"
+      }
+    },
+    {
       "name": "CREATiVE24",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -178,15 +215,6 @@
       }
     },
     {
-      "name": "DepraveD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(DepraveD)$"
-      }
-    },
-    {
       "name": "DNL",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -223,12 +251,30 @@
       }
     },
     {
+      "name": "Feranki1980",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Feranki1980)$"
+      }
+    },
+    {
       "name": "FGT",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "^(FGT)$"
+      }
+    },
+    {
+      "name": "FMD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FMD)$"
       }
     },
     {
@@ -427,6 +473,15 @@
       "required": false,
       "fields": {
         "value": "^(LiGaS)$"
+      }
+    },
+    {
+      "name": "LUCY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(LUCY)$"
       }
     },
     {
@@ -637,15 +692,6 @@
       }
     },
     {
-      "name": "SasukeducK",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(SasukeducK)$"
-      }
-    },
-    {
       "name": "Scene",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -682,12 +728,12 @@
       }
     },
     {
-      "name": "tarunk9c",
+      "name": "SUNSCREEN",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(tarunk9c)$"
+        "value": "^(SUNSCREEN)$"
       }
     },
     {
@@ -724,15 +770,6 @@
       "required": false,
       "fields": {
         "value": "^(TIKO)$"
-      }
-    },
-    {
-      "name": "VECTOR",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(VECTOR)$"
       }
     },
     {

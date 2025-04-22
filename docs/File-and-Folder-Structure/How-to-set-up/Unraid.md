@@ -91,6 +91,20 @@ mkdir -p /mnt/user/data/{usenet/{incomplete,complete}/{tv,movies,music},media/{t
 mkdir -p /mnt/user/data/{torrents/{tv,movies,music},media/{tv,movies,music}}
 ```
 
+##### Fix unRaid permissions
+
+When you need to fix your permissions, for example, after you have moved/copied items, manually created folders, or used the [Fastest way to create the needed subfolders](#fastest-way-to-create-the-needed-subfolders), you can use two methods to adjust your permissions.
+
+1. UnRaid's `Docker Safe New Perms` that  can be found under Tools in the Dashboard. (_This utility will restore standard unRaid permissions to all shares and files without affecting any APPDATA shares for Docker applications._)
+1. From the terminal by using the following two commands.
+
+    !!! danger "Only run this command if you strictly follow the guide's suggested folder and share setup."
+
+    ```bash
+    chown -R nobody:users /mnt/user/data/
+    chmod -R a=,a+rX,u+w,g+w /mnt/user/data/
+    ```
+
 ---
 
 ### Breakdown of the Folder Structure
@@ -99,12 +113,12 @@ mkdir -p /mnt/user/data/{torrents/{tv,movies,music},media/{tv,movies,music}}
 
 ## Setting up the containers
 
-!!! tip "Create a custom docker network"
-    Why would you want a custom docker network?
+!!! tip "Create a custom Docker network"
+    Why would you want a custom Docker network?
 
     A major benefit of having your Docker containers on the same custom Docker network is that they will be able to communicate with other using their container names, rather than having to use IP addresses.
 
-    Unraid doesn't create a custom docker network by default, you need to create one yourself.
+    Unraid doesn't create a custom Docker network by default, you need to create one yourself.
 
     - Open a terminal window and type:
 
@@ -112,7 +126,7 @@ mkdir -p /mnt/user/data/{torrents/{tv,movies,music},media/{tv,movies,music}}
         docker network create your_uber_cool_network_name
         ```
 
-    - or watch the following video below on how to create a custom docker network
+    - or watch the following video below on how to create a custom Docker network
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/7fzBDCI8O2w?si=itGS624rC7jxD8ly" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -189,7 +203,7 @@ Sonarr, Radarr and Lidarr
 
 !!! info
 
-    Sonarr, Radarr, and Lidarr get access to everything because the download folder(s) and media folder will need to look like and be one mount, on the file system. Hard links will work properly and any moves will be atomic, rather than copying and deleting.
+    Sonarr, Radarr, and Lidarr get access to everything because the download folder(s) and media folder will need to look like and be one mount, on the file system. hardlinks will work properly and any moves will be atomic, rather than copying and deleting.
 
 {! include-markdown "../../../includes/file-and-folder-structure/docker-tree-full.md" !}
 

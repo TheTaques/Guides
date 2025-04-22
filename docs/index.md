@@ -29,8 +29,7 @@ I try to make my guides as easy as possible for everyone to understand and, in m
 - If you want to contribute, feel free to create a PR (Pull Request).
 - If you found an actual issue related to the guide you can open a Github [issue](https://github.com/TRaSH-Guides/Guides/issues){:target="\_blank" rel="noopener noreferrer"}.
 
-<center>[ Click For Support ](https://trash-guides.info/discord){ .md-button .md-button--primary .custom_width }</center>
-<center>[![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord){ .off-glb }](https://trash-guides.info/discord){:target="\_blank" rel="noopener noreferrer"}</center>
+--8<-- "includes/support.md"
 
 ---
 
@@ -45,7 +44,7 @@ All of the information provided in these guides, as well as in Discord or any gu
 
 ### Special Thanks
 
-- [iXNyNe aka nemchik](https://github.com/nemchik){:target="_blank" rel="noopener noreferrer"} for introducing me to the world of dockers with DockSTARTer, and helping me to learn the basics for it.
+- [iXNyNe aka nemchik](https://github.com/nemchik){:target="_blank" rel="noopener noreferrer"} for introducing me to the world of Docker containers with DockSTARTer, and helping me to learn the basics for it.
 - [Roxedus](https://github.com/Roxedus){:target="_blank" rel="noopener noreferrer"} for helping me with the transfer/conversion of my Github guides to MkDocs and making everything look great.
 
 --8<-- "CONTRIBUTORS.md"

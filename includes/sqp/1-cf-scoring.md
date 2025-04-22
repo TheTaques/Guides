@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 #### Custom Formats and scores
 
 **The following Custom Formats are required:**
@@ -30,6 +31,7 @@
     | Custom Format                                                                                                                        |                                           Score                                            | Trash ID                                            |
     | ------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------: | --------------------------------------------------- |
     | [{{ radarr['cf']['bhdstudio']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/bhdstudio.json) |                 {{ radarr['cf']['bhdstudio']['trash_scores']['default'] }}                 | {{ radarr['cf']['bhdstudio']['trash_id'] }}         |
+    | [{{ radarr['cf']['hallowed']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/hallowed.json)   |                 {{ radarr['cf']['hallowed']['trash_scores']['default'] }}                  | {{ radarr['cf']['hallowed']['trash_id'] }}          |
     | [{{ radarr['cf']['web-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-01)                                |                {{ radarr['cf']['web-tier-01']['trash_scores']['default'] }}                | {{ radarr['cf']['web-tier-01']['trash_id'] }}       |
     | [{{ radarr['cf']['web-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-02)                                |                {{ radarr['cf']['web-tier-02']['trash_scores']['default'] }}                | {{ radarr['cf']['web-tier-02']['trash_id'] }}       |
     | [{{ radarr['cf']['web-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-03)                                |                {{ radarr['cf']['web-tier-03']['trash_scores']['default'] }}                | {{ radarr['cf']['web-tier-03']['trash_id'] }}       |
@@ -51,7 +53,7 @@
 
 {! include-markdown "../../includes/sqp/hd-radarr-misc-optional.md" !}
 
-??? abstract "Movie Versions - [Click to show/hide]"
+??? abstract "Movie Versions (Optional) - [Click to show/hide]"
 
     | Custom Format                                                                                                           |                                 Score                                 | Trash ID                                               |
     | ----------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------: | ------------------------------------------------------ |
@@ -68,3 +70,4 @@
         - The reason why we don't add [{{ radarr['cf']['imax']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#imax) is because BHDStudio didn't add IMAX to their filename before 2023-07-27.
 
         !!! danger "Adding `IMAX`/`IMAX Enhanced` will replace the BHDStudio release in most cases :warning:"
+<!-- markdownlint-enable MD041-->

@@ -310,7 +310,7 @@ _The reason that we score lossy Atmos higher than lossless DTS-HD MA is that we 
 
 ### HDR Formats
 
-- You have a 4K TV and a hardware media player device (such as Roku, AppleTV, Shield, SmartTV App, etc.) that supports several HDR formats (such as Dolby Vision, HDR10, HDR10+, etc.).
+- You have a 4K TV and a hardware media player device (such as Roku, Apple TV, Shield, SmartTV App, etc.) that supports several HDR formats (such as Dolby Vision, HDR10, HDR10+, etc.).
 
 {! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
 
@@ -329,6 +329,10 @@ _The reason that we score lossy Atmos higher than lossless DTS-HD MA is that we 
     ![!cf-mm-propers-repacks-disable](images/cf-mm-propers-repacks-disable.png)
 
     This way you make sure the Custom Format preferences will be used instead.
+
+### How Does Custom Format Scoring Work?
+
+{! include-markdown "../../includes/shared/custom-format-basic-scoring-information.md" !}
 
 ### Custom Formats to avoid certain releases
 
